@@ -31,7 +31,7 @@ window.BIRTHDAY_CONFIG = {
   songTitle: "To the Bone",
   songArtist: "Pamungkas",
   musicUrl: "/music/our-song.mp3",
-  musicVolume: 0.45, // 0 (silent) to 1 (full volume)
+  musicVolume: 0.40, // 0 (silent) to 1 (full volume)
   musicLoop: true,
   musicStartOnOpen: true, // Begin on the Open your love letter tap (mobile-friendly).
 
