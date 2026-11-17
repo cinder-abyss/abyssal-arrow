@@ -45,11 +45,11 @@ window.BIRTHDAY_CONFIG = {
     { src: "/photos/photo-3.jpeg", caption: "My little Princess -- so cute!" },
     { src: "/photos/photo-4.jpg", caption: "Yieee Graduatinggg...." },
     { src: "/photos/photo-5.jpg", caption: "invisible Thread Theory?" },
-    { src: "/photos/photo-6.jpg", caption: "Another memory with you ♡" },
-    { src: "/photos/photo-7.jpg", caption: "Our little story continues ♡" },
-    { src: "/photos/photo-8.jpg", caption: "A moment worth keeping ♡" },
-    { src: "/photos/photo-9.jpg", caption: "One more reason to smile ♡" },
-    { src: "/photos/photo-10.jpg", caption: "More memories with you ♡" }
+    { src: "/photos/photo-6.jpeg", caption: "" },
+    { src: "/photos/photo-7.jpg", caption: "" },
+    { src: "/photos/photo-8.jpeg", caption: "" },
+    { src: "/photos/photo-9.jpeg", caption: "" },
+    { src: "/photos/photo-10.jpeg", caption: "" }
   ],
 
   // PHOTO BOMB: photos 1–5 burst first, then tap Next 5 to see photos 6–10.
