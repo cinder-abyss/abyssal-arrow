@@ -6,12 +6,12 @@
  */
 window.BIRTHDAY_CONFIG = {
   recipientName: "Ela",
-  fromName: "The one who loves you",
+  fromName: "Zel",
   introLine: "Ela, you make every ordinary day feel magical. I made this little surprise just for you. ♡",
   wishInstruction: "Close those pretty eyes, make a wish, and let me make your day a little sweeter.",
-  letterTitle: "To my Ela, my favorite person",
+  letterTitle: "To my Noela, my favorite person",
   letterParagraphs: [
-    "Happy birthday, Ela, my love. Today is for celebrating the girl who makes the ordinary days feel like the ones I never want to forget. Your smile, your laugh, the way you are so beautifully you — I fall a little harder for all of it.",
+    "Happy birthday, Noela, my love. Today is for celebrating the girl who makes the ordinary days feel like the ones I never want to forget. Your smile, your laugh, the way you are so beautifully you — I fall a little harder for all of it.",
     "I wish I could wrap every beautiful thing in the world and give it to you today. Until then, I hope this tiny surprise makes you smile and reminds you just how loved you are.",
     "More than anything, I hope we get to make a thousand more memories, celebrate a thousand more little wins, and hold onto each other through every new chapter. I love you. ♡"
   ],
@@ -31,7 +31,7 @@ window.BIRTHDAY_CONFIG = {
   songTitle: "To the Bone",
   songArtist: "Pamungkas",
   musicUrl: "/music/our-song.mp3",
-  musicVolume: 0.38, // 0 (silent) to 1 (full volume)
+  musicVolume: 0.45, // 0 (silent) to 1 (full volume)
   musicLoop: true,
   musicStartOnOpen: true, // Begin on the Open your love letter tap (mobile-friendly).
 
