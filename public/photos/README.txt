@@ -1,0 +1,1 @@
+Put JPG, PNG, or WebP photos in this folder (e.g. photo-1.jpg).\nFor multiple images, list them in public/config.js under galleryPhotos.\nFor the final gift, set photoUrl to the image path.\nPhotos are publicly accessible to anyone with the website link.\n
