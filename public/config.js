@@ -39,8 +39,11 @@ window.BIRTHDAY_CONFIG = {
   // The gallery appears AFTER she blows out the candle and reads the letter.
   galleryTitle: "Every little moment with you",
   galleryPhotos: [
-    // { src: "/photos/photo-1.jpg", caption: "That day I couldn't stop smiling ♡" },
-    // { src: "/photos/photo-2.jpg", caption: "A beautiful little memory" }
+    { src: "/photos/photo-1.jpg", caption: "My beautiful Wife ♡" },
+    { src: "/photos/photo-2.jpg", caption: "A beautiful little memory" }
+    { src: "/photos/photo-3.jpg", caption: "My little Princess -- so cute!" }
+    { src: "/photos/photo-4.jpg", caption: "Yieee Graduatinggg...." }
+    { src: "/photos/photo-5.jpg", caption: "invisible Thread Theory?" }
   ],
 
   // PHOTO BOMB: 4 or 5 pictures burst across her screen when she taps the bottom surprise.
