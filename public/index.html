@@ -1,0 +1,219 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#241426" />
+  <meta name="description" content="A tiny birthday love letter and surprise, made just for Ela." />
+  <meta property="og:title" content="A birthday love letter for Ela ♡" />
+  <meta property="og:description" content="A tiny universe full of love, just for Ela." />
+  <title>A birthday love letter for Ela ♡</title>
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Fraunces:opsz,wght,SOFT,WONK@9..144,400,60,1;9..144,500,60,1;9..144,600,60,1&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/styles.css?v=ela-bday5" />
+  <script src="/config.js?v=ela-bday5" defer></script>
+  <script src="/app.js?v=ela-bday5" defer></script>
+  <script src="/effects.js?v=ela-bday5" defer></script>
+</head>
+<body>
+  <div class="ambient-stars" aria-hidden="true">
+    <span class="floating-heart heart-one">♡</span><span class="floating-heart heart-two">♡</span><span class="floating-heart heart-three">♡</span>
+    <span class="star star-a">✧</span><span class="star star-b">✦</span><span class="star star-c">✳</span>
+    <span class="star star-d">✧</span><span class="star star-e">✳</span><span class="star star-f">✦</span>
+    <span class="orb orb-a"></span><span class="orb orb-b"></span>
+  </div>
+  <canvas id="confetti" aria-hidden="true"></canvas>
+  <div class="page-shell">
+    <header class="topbar">
+      <div class="brand"><span class="brand-star">♡</span><span>made with love</span></div>
+      <div class="topbar-actions">
+        <span class="love-chip" aria-label="A little love, just for you">♡ for my girl</span>
+        <span class="topbar-tag">a tiny universe for Ela</span>
+        <button class="icon-button music-button" type="button" id="musicToggle" hidden aria-label="Turn gentle background music on" aria-pressed="false" title="Turn background music on or off">
+          <svg class="music-icon" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M9 18V5l12-2v13M9 10l12-2"/><ellipse cx="6" cy="18" rx="3" ry="2.2"/><ellipse cx="18" cy="16" rx="3" ry="2.2"/></svg>
+          <span class="music-cross" aria-hidden="true"></span>
+        </button>
+      </div>
+    </header>
+
+    <main id="mainContent">
+      <!-- SCENE 1 — INVITATION -->
+      <section class="scene intro-scene is-active" id="sceneIntro" aria-labelledby="introTitle">
+        <div class="scene-inner intro-inner">
+          <div class="hero-badges"><span class="eyebrow-dot"></span> FOR THE GIRL WHO HAS MY HEART <span class="eyebrow-dot"></span></div>
+          <div class="envelope-stage" aria-hidden="true">
+            <div class="envelope-glow"></div><span class="envelope-orbit" aria-hidden="true"></span><span class="mini-heart heart-left" aria-hidden="true">♥</span><span class="mini-heart heart-right" aria-hidden="true">♥</span>
+            <div class="floating-spark sparkle-one">✦</div><div class="floating-spark sparkle-two">✧</div><div class="floating-spark sparkle-three">✳</div>
+            <div class="envelope-shadow"></div>
+            <div class="envelope">
+              <div class="envelope-back"></div>
+              <div class="letter-peek"><span>♡</span><span>just for you</span></div>
+              <div class="envelope-flap"></div>
+              <div class="envelope-front"></div>
+              <div class="envelope-seal">♡</div>
+            </div>
+          </div>
+          <h1 id="introTitle" class="display-title">For the girl<br /><em>who has my heart.</em></h1>
+          <p class="hero-copy" id="introLine">I made you a little corner of the universe.</p>
+          <button type="button" class="primary-button opening-button" id="openSurprise">
+            <span>Open your love letter</span><span class="btn-arrow" aria-hidden="true">↗</span>
+          </button>
+          <div class="song-ribbon" aria-label="Our song, played from the music file in this website">
+            <button type="button" class="song-record" id="songPlayButton" aria-pressed="false" aria-label="Play our song"><span id="songPlayIcon" aria-hidden="true">▶</span></button>
+            <span class="song-copy"><small>OUR SONG ♡</small><strong id="songTitle">To the Bone</strong><span id="songArtist">Pamungkas</span></span>
+            <button type="button" class="song-listen" id="songListenButton" aria-pressed="false">Play ♫</button>
+          </div>
+          <p class="song-helper" id="musicStatus" role="status" aria-live="polite">Our song will play when you open your love letter ♫</p>
+          <p class="micro-note"><span aria-hidden="true">✧</span> MADE FOR YOU, AND ONLY YOU <span aria-hidden="true">✧</span></p>
+        </div>
+      </section>
+
+      <!-- SCENE 2 — BIRTHDAY CAKE -->
+      <section class="scene cake-scene" id="sceneCake" aria-labelledby="cakeTitle" hidden>
+        <div class="scene-inner cake-inner">
+          <span class="section-kicker"><span>01</span> / MAKE A WISH, MY LOVE</span>
+          <h1 id="cakeTitle" class="scene-title" tabindex="-1">One wish, <em>my love.</em></h1>
+          <p class="scene-subtitle" id="wishInstruction">Close your eyes, think of something beautiful, and make a wish.</p>
+          <div class="cake-area" id="cakeArea" aria-label="Birthday cake with one lit candle. Swipe across it to blow out the candle." role="img">
+            <div class="cake-spark spark1" aria-hidden="true">✧</div><div class="cake-spark spark2" aria-hidden="true">✦</div><div class="cake-spark spark3" aria-hidden="true">✧</div>
+            <div class="candle-group" id="candleGroup" aria-hidden="true">
+              <div class="flame-anchor"><canvas id="candleFlameCanvas" class="candle-flame-canvas" width="236" height="264" aria-hidden="true"></canvas></div>
+              <div class="wick"></div><div class="candle"><span></span><span></span><span></span><span></span></div>
+              <div class="smoke"><i></i><i></i><i></i></div>
+            </div>
+            <div class="cake-illustration" aria-hidden="true">
+              <div class="cake-icing-top"></div>
+              <div class="cake-upper"><div class="upper-icing"></div><div class="sprinkles"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div></div>
+              <div class="cake-icing-middle"></div>
+              <div class="cake-bottom"><div class="cake-stripe one"></div><div class="cake-stripe two"></div><div class="cake-stripe three"></div><div class="bottom-icing"></div></div>
+              <div class="cake-platter"></div><div class="platter-shadow"></div>
+            </div>
+            <div class="cake-caption" id="cakeCaption">one little candle • a thousand wishes</div>
+          </div>
+          <div class="wish-panel">
+            <p class="wish-instruction"><span class="tiny-wind" aria-hidden="true">〰</span> Blow towards your phone, or tap below</p>
+            <div class="action-buttons">
+              <button type="button" class="primary-button microphone-button" id="micButton">
+                <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><rect x="9" y="2" width="6" height="13" rx="3"/><path d="M5 10v2a7 7 0 0 0 14 0v-2M12 19v3m-4 0h8"/></svg>
+                <span id="micButtonLabel">Use my microphone</span>
+              </button>
+              <button type="button" class="secondary-button" id="tapBlowButton">Tap to blow <span aria-hidden="true">↗</span></button>
+            </div>
+            <div class="mic-visual" id="micVisual" hidden aria-hidden="true"><span class="mic-level" id="micLevel"></span><span class="mic-line"></span></div>
+            <p id="micStatus" class="mic-status" role="status" aria-live="polite">You can also swipe across the cake ✨</p>
+            <p class="privacy-note"><svg viewBox="0 0 24 24" width="13" height="13" aria-hidden="true"><rect x="5" y="10" width="14" height="11" rx="2"/><path d="M8 10V7a4 4 0 1 1 8 0v3"/></svg> Microphone audio stays on your device. Never recorded or uploaded.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- SCENE 3 — THE REVEAL -->
+      <section class="scene reveal-scene" id="sceneReveal" aria-labelledby="revealTitle" hidden>
+        <div class="scene-inner reveal-inner">
+          <span class="section-kicker"><span>02</span> / ALL THE LOVE IN THE WORLD</span>
+          <div class="reveal-heart" aria-hidden="true">♡</div>
+          <h1 id="revealTitle" class="reveal-title" tabindex="-1">Happy Birthday,<br /><em id="recipientName">Birthday Girl!</em></h1>
+          <p class="reveal-subtitle">You make my world brighter in ways you will never fully know. ♡</p>
+          <div class="handdrawn-divider" aria-hidden="true"><span></span> ✦ <span></span></div>
+          <div class="letter-card">
+            <div class="letter-head"><span class="letter-icon">✉</span><span>A LETTER FROM MY HEART</span></div>
+            <h2 id="letterTitle">For a very special you</h2>
+            <div class="letter-content" id="letterContent"></div>
+            <p class="letter-signature">With lots of love,<br /><em id="fromName">Someone who adores you</em> ♡</p>
+            <div class="letter-stamp" aria-hidden="true">✳</div>
+          </div>
+
+          <div class="reasons-section">
+            <span class="mini-kicker">THINGS I LOVE ABOUT YOU</span>
+            <h2>Three reasons I fall for you <em>every day.</em></h2>
+            <p>Turn over each card, sweetheart. I made these for you.</p>
+            <div class="reason-grid" id="reasonGrid"></div>
+          </div>
+
+          <section class="memories-section" id="memoriesSection" aria-labelledby="memoriesTitle" hidden>
+            <span class="mini-kicker">CHAPTERS OF OUR STORY</span>
+            <h2 id="memoriesTitle">A few moments I <em>treasure.</em></h2>
+            <p>Every photo is another reason I feel lucky to love you ♡</p>
+            <figure class="memories-frame" id="memoriesFrame">
+              <div class="memories-photo-wrap">
+                <img id="memoryImage" src="" alt="A special birthday memory" loading="lazy" />
+              </div>
+              <figcaption id="memoryCaption"></figcaption>
+            </figure>
+            <div class="memories-controls" id="memoriesControls">
+              <button type="button" class="memory-arrow" id="memoryPrev" aria-label="Previous photo">←</button>
+              <span id="memoryCount" class="memory-count" role="status" aria-live="polite"></span>
+              <button type="button" class="memory-arrow" id="memoryNext" aria-label="Next photo">→</button>
+            </div>
+            <div class="memories-dots" id="memoriesDots" aria-label="Photo selection"></div>
+          </section>
+
+          <div class="gift-section photo-bomb-section">
+            <span class="mini-kicker">ONE MORE THING, BABY</span>
+            <h2>An explosion of <em>us.</em></h2>
+            <p>There are too many reasons to smile when I think of us.</p>
+            <button type="button" class="photo-bomb-button" id="photoBombButton" aria-haspopup="dialog" aria-controls="photoBurstOverlay" aria-label="Release a burst of our photos">
+              <span class="photo-bomb-visual" aria-hidden="true">
+                <span class="photo-bomb-preview preview-one"><span>♥</span></span>
+                <span class="photo-bomb-preview preview-two"><span>✦</span></span>
+                <span class="photo-bomb-preview preview-three"><span>♡</span></span>
+                <span class="photo-bomb-orb"><span class="photo-bomb-orb-shine"></span><span class="photo-bomb-orb-heart">♥</span></span>
+                <span class="photo-bomb-fuse"></span><span class="photo-bomb-spark">✳</span>
+              </span>
+              <span class="photo-bomb-cta">Burst our memories <span aria-hidden="true">↗</span></span>
+              <span class="photo-bomb-small" id="photoBombCountLabel">5 little memories, one big surprise ♡</span>
+            </button>
+            <div class="burst-afterword" id="burstAfterword" hidden>
+              <span class="gift-reveal-heart" aria-hidden="true">💗</span>
+              <h3 id="giftTitle">One more little surprise...</h3>
+              <p id="giftMessage"></p>
+            </div>
+          </div>
+
+          <div class="footer-cta">
+            <p>Here’s to a lifetime of choosing you. <span aria-hidden="true">✧</span></p>
+            <button type="button" class="replay-button" id="replayButton"><span aria-hidden="true">↻</span> Make another wish</button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="bottom-bar"><span>♡ &nbsp; a whole lot of love, in website form</span><span>made for my favorite girl &nbsp; ✳</span></footer>
+  </div>
+  <!-- Full-screen, touch-friendly photo burst. Photos originate from the button on tap. -->
+  <div class="photo-burst-overlay" id="photoBurstOverlay" role="dialog" aria-modal="true" aria-labelledby="photoBurstTitle" hidden>
+    <div class="photo-burst-backdrop" aria-hidden="true"></div>
+    <div class="photo-burst-confetti" aria-hidden="true">
+      <span class="falling-confetti c1"></span><span class="falling-confetti c2"></span><span class="falling-confetti c3"></span><span class="falling-confetti c4"></span><span class="falling-confetti c5"></span><span class="falling-confetti c6"></span><span class="falling-confetti c7"></span><span class="falling-confetti c8"></span><span class="falling-confetti c9"></span><span class="falling-confetti c10"></span><span class="falling-confetti c11"></span><span class="falling-confetti c12"></span>
+    </div>
+    <div class="photo-burst-balloons" aria-hidden="true">
+      <span class="burst-balloon balloon-a"><i></i></span><span class="burst-balloon balloon-b"><i></i></span><span class="burst-balloon balloon-c"><i></i></span><span class="burst-balloon balloon-d"><i></i></span>
+    </div>
+    <div class="photo-burst-centerpiece" aria-hidden="true">
+      <span class="photo-burst-centerpiece-line">Happy Birthday</span>
+      <strong>Love!</strong>
+    </div>
+    <div class="photo-burst-header">
+      <div><span class="mini-kicker">EVERY LITTLE MOMENT WITH YOU</span><h2 id="photoBurstTitle">Our favorite <em>memories.</em></h2></div>
+      <button type="button" class="photo-burst-close" id="photoBurstClose" aria-label="Close photo explosion">✕</button>
+    </div>
+    <div class="photo-burst-stage" id="photoBurstStage" aria-label="Scattered photos. Tap one to view it larger."></div>
+    <p class="photo-burst-hint" id="photoBurstHint">Tap a photo to see it up close ♡</p>
+    <div class="photo-burst-spotlight" id="photoBurstSpotlight" hidden>
+      <div class="spotlight-content">
+        <button type="button" class="spotlight-close" id="spotlightClose" aria-label="Back to scattered photos">← Back to memories</button>
+        <figure class="spotlight-polaroid">
+          <div class="spotlight-photo" id="spotlightPhoto"><img id="spotlightImage" alt="" hidden /><div class="spotlight-placeholder" id="spotlightPlaceholder"><span>♥</span><small>A PHOTO GOES HERE</small></div></div>
+          <figcaption id="spotlightCaption"></figcaption>
+        </figure>
+        <div class="spotlight-actions">
+          <button type="button" id="spotlightPrevious" aria-label="View previous photo">←</button>
+          <span id="spotlightCounter" aria-live="polite"></span>
+          <button type="button" id="spotlightNext" aria-label="View next photo">→</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
