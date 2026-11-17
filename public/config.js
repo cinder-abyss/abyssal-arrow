@@ -5,8 +5,8 @@
  * After editing this file on GitHub, Railway automatically redeploys.
  */
 window.BIRTHDAY_CONFIG = {
-  recipientName: "Birthday Girl",
-  fromName: "Someone who adores you",
+  recipientName: "Noela Mae E. Malong",
+  fromName: "Fritzel Sile",
   introLine: "I made you a little corner of the universe.",
   wishInstruction: "Close your eyes, think of something beautiful, and make a wish.",
   letterTitle: "For a very special you",
