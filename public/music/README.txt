@@ -1,0 +1,1 @@
+Put your own MP3 or M4A song here. Example: our-song.mp3\nUse public/config.js: musicUrl: "/music/our-song.mp3"\nAudio files are publicly accessible to anyone with the link.\n
